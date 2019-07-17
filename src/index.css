@@ -7,6 +7,19 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+.grid {
+  display: grid;
+  grid-template-columns: 200px 200px;
+  grid-template-rows: 1fr 1fr;
+  left: 50%;
+  
+}
+.grid-item {
+  border: solid 1px black;
+  text-align: center;
+  border-radius: 0px 0px 3px 3px;
+}
+
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
