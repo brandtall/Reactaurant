@@ -1,10 +1,21 @@
 import React, { Component } from 'react'
+import Form from 'react-bootstrap/Form'
+import Button from 'react-bootstrap/Button'
 
 
 const Info = () => {
     return (
-        <h3>You can reach us on: </h3>,
-        <p>Email: Reactaurant@example.com<br/>Mobile Phone: +123 456 7890<br/>Follow us on social media</p>
+<Form>
+    <Form.Group controlId="formGroupName">
+        <Form.Label>Name:</Form.Label>
+        <Form.Control type="name" placeholder="Enter Name" />
+    </Form.Group>
+    <Form.Group controlId="formGroupEmail">
+        <Form.Label>Email: </Form.Label>
+        <Form.Control type="Email" placeholder="Enter email" />
+    </Form.Group>
+    <Button type="submit">Submit form</Button>
+</Form>
     );
 }
 

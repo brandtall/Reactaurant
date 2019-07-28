@@ -2,30 +2,25 @@ import React, { Component } from "react";
 import About from "./About";
 import Menu from "./Menu";
 import Contact from "./Contact";
-import { Tab, Tabs, TabList, TabPanel } from "react-tabs";
+import Tabs from 'react-bootstrap/Tabs'
+import Tab from 'react-bootstrap/Tab'
 import "react-tabs/style/react-tabs.css";
 import "./index.css"
 
 class Tabso extends Component {
   render() {
     return (
-      <Tabs>
-        <TabList>
-          <Tab>About</Tab>
-          <Tab>Menu</Tab>
-          <Tab>Contact Us</Tab>
-        </TabList>
-
-        <TabPanel>
-          <About />
-        </TabPanel>
-        <TabPanel>
-          <Menu />
-        </TabPanel>
-        <TabPanel>
-            <Contact />
-        </TabPanel>
-      </Tabs>
+      <Tabs defaultActiveKey="home" >
+  <Tab eventKey="home" title="About" default>
+    <About/>
+  </Tab>
+  <Tab eventKey="profile" title="Menu">
+    <Menu/>
+  </Tab>
+  <Tab eventKey="contact" title="Contact">
+    <Contact/>
+  </Tab>
+</Tabs>
     );
   }
 }
